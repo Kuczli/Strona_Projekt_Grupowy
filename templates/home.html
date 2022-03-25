@@ -48,31 +48,31 @@
                         <div id="a10" class="col-sm-8">
                             <h3 class="text-center">Zapisz się do mojego autorskiego <br> kursu fotograficznego*</h3>
 
-                            <form>
+                            <form action="" method="POST">
                                 <div class="form-group">
                                     
                                     <div class="input-group mb-2 mr-sm-2">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jan Kowalski">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" name="inlineFormInputName2" id="inlineFormInputName2" placeholder="Jan Kowalski">
                                         <div class="input-group-prepend">
                                         <div class="input-group-text">@</div>
                                         
                                         </div>
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputGroupUsername2" placeholder="example@gmail.com">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" name="inlineFormInputGroupUsername2" id="inlineFormInputGroupUsername2" placeholder="example@gmail.com">
                                     </div>
                                 </div>
 
                                 <div class="checkbox">
-                                    <label><input type="checkbox" value="">Kurs podstawowy (2 dni)&nbsp;<p5>199zł</p5>&nbsp;<p6><del>299zł</del></p6></label>
+                                    <label><input type="checkbox" name="checkopt1" value="checkopt1">Kurs podstawowy (2 dni)&nbsp;<p5>199zł</p5>&nbsp;<p6><del>299zł</del></p6></label>
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" value="">Kurs średnio zaawansowany (5 dni)&nbsp;<p5>399zł</p5>&nbsp;<p6><del>599zł</del></p6></label>
+                                    <label><input type="checkbox" name="checkopt2" value="checkopt2">Kurs średnio zaawansowany (5 dni)&nbsp;<p5>399zł</p5>&nbsp;<p6><del>599zł</del></p6></label>
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" value="">Kurs zaawansowany (14 dni)&nbsp;<p5>599zł</p5>&nbsp;<p6><del>999zł</del></p6></label>
+                                    <label><input type="checkbox"  name="checkopt3"value="checkopt3">Kurs zaawansowany (14 dni)&nbsp;<p5>599zł</p5>&nbsp;<p6><del>999zł</del></p6></label>
                                 </div>
                                 <div class="form-group">
                                     <label for="comment">Co chciałbyś/abyś się nowego nauczyć?</label>
-                                    <textarea class="form-control" rows="3" id="comment"></textarea>
+                                    <textarea class="form-control" rows="3" name="comment" id="comment"></textarea>
                                 </div>
                                 <button type="submit" class="col-sm-12 btn btn-primary mb-2">ZAPISZ SIĘ</button>
                                 <p1>*zapisując się na kurs, wyrażasz zgodę na przetwarzanie danych wysłanych przez formularz</p1>
