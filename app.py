@@ -21,6 +21,7 @@ def home():
     if request.method == 'POST':
         name = request.form.get('inlineFormInputName2')
         email = request.form.get('inlineFormInputGroupUsername2')
+        emailtoSend = name+ "@"+email
         checkopt1 = False
         checkopt2 = False
         checkopt3 = False
@@ -45,7 +46,7 @@ def home():
                                   body="Message from: " + name + "\n" + "email: " + email + "\n" + "Message:" + message)
         message_to_sender = Message(subject="Dziękuje za wysłanie wiadomośći",
                                     sender=app.config.get("MAIL_USERNAME"),
-                                    recipients=list(email.split(" ")), # replace with your email for testing
+                                    recipients=list(emailtoSend.split(" ")), # replace with your email for testing
                                     body="Dziękuję za wiadomość, wkrótce odpiszę")
         mail.send(mesage_to_admin)
         mail.send(message_to_sender)
